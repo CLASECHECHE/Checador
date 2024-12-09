@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div id="admin-panel">
+        <h2>Panel de Administración</h2>
+
+        <!-- Botones principales -->
+        <button id="btn-create-user">Crear Usuario</button>
+        <button id="btn-create-admin">Crear Administrador</button>
+        <button id="btn-logout">Regresar al Login</button>
+
+        <!-- Contenedor para los formularios -->
+        <div id="form-container" style="display: none;">
+            <form id="user-form" style="display: none;">
+                <h3>Crear Usuario</h3>
+                <label>ID:</label>
+                <input type="text" id="user-id" placeholder="ID del Usuario" required><br>
+
+                <label>Nombre:</label>
+                <input type="text" id="user-name" placeholder="Nombre del Usuario" required><br>
+
+                <label>Teléfono:</label>
+                <input type="tel" id="user-phone" placeholder="Teléfono" required><br>
+
+                <label>Correo Electrónico:</label>
+                <input type="email" id="user-email" placeholder="Correo Electrónico" required><br>
+
+                <label>Fecha de Nacimiento:</label>
+                <input type="date" id="user-dob" required><br>
+
+                <label>Edad:</label>
+                <input type="number" id="user-age" placeholder="Edad" required><br>
+
+                <label>Sexo:</label>
+                <select id="user-gender" required>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select><br>
+
+                <label>Departamento:</label>
+                <select id="user-department" required>
+                    <option value="Sistemas">Sistemas</option>
+                    <option value="Electromecanica">Electromecanica</option>
+                    <option value="Industrial">Industrial</option>
+                    <option value="Gestion Empresarial">Gestion Empresarial</option>
+                </select><br>
+
+                <label>Contraseña:</label>
+                <input type="password" id="user-password" placeholder="Contraseña" required><br>
+
+                <button type="submit">Guardar Usuario</button>
+            </form>
+
+            <form id="admin-form" style="display: none;">
+                <h3>Crear Administrador</h3>
+                <label>ID:</label>
+                <input type="text" id="admin-id" placeholder="ID del Administrador" required><br>
+
+                <label>Nombre:</label>
+                <input type="text" id="admin-name" placeholder="Nombre del Administrador" required><br>
+
+                <label>Teléfono:</label>
+                <input type="tel" id="admin-phone" placeholder="Teléfono" required><br>
+
+                <label>Correo Electrónico:</label>
+                <input type="email" id="admin-email" placeholder="Correo Electrónico" required><br>
+
+                <label>Fecha de Nacimiento:</label>
+                <input type="date" id="admin-dob" required><br>
+
+                <label>Edad:</label>
+                <input type="number" id="admin-age" placeholder="Edad" required><br>
+
+                <label>Sexo:</label>
+                <select id="admin-gender" required>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select><br>
+
+                <label>Jefe de Departamento:</label>
+                <select id="admin-department" required>
+                    <option value="Sistemas">Sistemas</option>
+                    <option value="Electromecanica">Electromecanica</option>
+                    <option value="Industrial">Industrial</option>
+                    <option value="Gestion Empresarial">Gestion Empresarial</option>
+                </select><br>
+
+                <label>Contraseña:</label>
+                <input type="password" id="admin-password" placeholder="Contraseña" required><br>
+
+                <button type="submit">Guardar Administrador</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

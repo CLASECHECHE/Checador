@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Checador - Login en 2 Pasos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Section -->
+        <div id="login-section">
+            <h2>Reloj Checador</h2>
+            <div id="step-1">
+                <input type="text" id="login-id" placeholder="ID de empleado">
+                <button id="btn-validate-id">Validar ID</button>
+            </div>
+            <div id="step-2" style="display:none;">
+                <input type="password" id="login-password" placeholder="Contraseña">
+                <button id="btn-login">Iniciar Sesión</button>
+            </div>
+        </div>
+
+        <!-- Main Buttons -->
+        <div id="main-buttons">
+            <button id="btn-guest">Entrar como Invitado</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
